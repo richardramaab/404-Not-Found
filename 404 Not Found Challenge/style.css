@@ -1,0 +1,150 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;700&family=Space+Mono:wght@400;700&display=swap');
+/* Import  End*/
+
+/* Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 77px;
+    font-family: 'inconsolata';
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+}
+
+.content {
+    margin-top: 85px;
+}
+.content__scarecrow {
+    width: 400px;
+    height: auto;
+    float: left;
+    margin-left: 250px;
+    
+}
+
+.content__text{
+    margin-left: 700px;
+}
+
+.text-1 {
+    display: flex;
+    margin: 0;
+    width: 400px;
+    font-family: 'space mono', sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.035;
+    color: #333333;
+}
+
+.text-2 {
+    display: flex;
+    margin: 0;
+    margin-top: 25px;
+    width: 250px;
+    font-family: 'space mono', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #4f4f4f;
+}
+
+.link {
+    display: flex;
+    margin: 0;
+    margin-top: 40px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'space mono', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 8.75px;
+    line-height: 21px;
+    background-color: #333333;
+    padding: 14px 10px;
+}
+
+
+.link a:visited  {
+    color: white
+ }
+
+.foot {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-bottom: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    display: inline-block;
+    color: #BDBDBD;
+    font-size: 14px;
+}
+
+.foot__username {
+    font-weight: 700;
+}
+
+@media (max-width: 1080px){
+    .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .content__scarecrow {
+        float: none;
+        margin: 0;
+    }
+    .content__text{
+        margin: 0;
+    }
+}
+
+@media (max-width: 949px){
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content__scarecrow {
+        float: none;
+        margin: 0;
+    }
+    .content__text{
+        margin: 0;
+    }
+}
+
+@media (max-width: 375px){
+    body {
+        width: 400px;
+    }
+    .logo {
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+    .content__scarecrow{
+        width: 300px;
+    }
+    .content__text{
+        margin-left: 40px;
+    }
+    .text-1{
+        font-size: 48px;
+    }
+}
